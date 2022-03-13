@@ -11,10 +11,14 @@ const styles = theme => ({
     border: {
         borderRadius: '4px',
         border: '2px solid silver',
-        padding: '15px 15px 30px'
+        paddingTop: '15px',
+        paddingBottom: '30px'
     },
     marginRight: {
         marginRight: '10px'
+    },
+    padding: {
+        padding: '0 20px !important'
     }
 })
 
@@ -44,16 +48,16 @@ const Pricing = props => {
                 <Grid container spacing={3} alignItems='stretch'>
                     <Grid item container xs={4}>
                         <Grid item container className={classes.border} spacing={1} direction='column'>
-                            <Grid item>
+                            <Grid item className={classes.padding}>
                                 <img src={crown} alt='crown' />
                             </Grid>
-                            <Grid item>
+                            <Grid item className={classes.padding}>
                                 <Typography variant='body1' sx={{ fontWeight: 'bolder' }}>Silver Plan</Typography>
                             </Grid>
-                            <Grid item sx={{ marginBottom: '10px' }}>
+                            <Grid item className={classes.padding} sx={{ marginBottom: '10px' }}>
                                 <Typography variant='body2'>
                                     <Typography component='span' sx={{ textDecoration: 'line-through', color: 'gray' }}>₹ 1299</Typography>{' '}
-                                    <Typography component='span' variant='h4' sx={{ color: '#7882A4' }}>₹ 799</Typography>{' '}
+                                    <Typography component='span' variant='h4' sx={{ color: '#7882A4', fontWeight: 'bold' }}>₹ 799</Typography>{' '}
                                     /year
                                 </Typography>
                             </Grid>
@@ -71,7 +75,7 @@ const Pricing = props => {
                                 <img src={device} alt='device' className={classes.marginRight} />
                                 <Typography component='span' sx={{ fontWeight: 'bolder' }}>Mobile + Desktop</Typography>
                             </Grid>
-                            <Grid item>
+                            <Grid item className={classes.padding}>
                                 <List>
                                     <ListItem sx={{ padding: '5px 0px' }}>
                                         <img src={checked} alt='checked' className={classes.marginRight} />
@@ -112,16 +116,16 @@ const Pricing = props => {
                             <Typography sx={{ fontSize: '12px', fontWeight: 'bolder' }}>Most Popular</Typography>
                         </Box>
                         <Grid item container className={classes.border} sx={{ backgroundColor: '#fbf7f4', borderColor: 'gold' }} direction='column' spacing={1}>
-                            <Grid item>
+                            <Grid item className={classes.padding}>
                                 <img src={crown} alt='crown' />
                             </Grid>
-                            <Grid item>
+                            <Grid item className={classes.padding}>
                                 <Typography variant='body1' sx={{ fontWeight: 'bolder' }}>Gold Plan</Typography>
                             </Grid>
-                            <Grid item sx={{ marginBottom: '10px' }}>
+                            <Grid item className={classes.padding} sx={{ marginBottom: '10px' }}>
                                 <Typography variant='body2'>
                                     <Typography component='span' sx={{ textDecoration: 'line-through', color: 'gray' }}>₹ 2599</Typography>{' '}
-                                    <Typography component='span' variant='h4' sx={{ color: '#F0A500' }}>₹ 1799</Typography>{' '}
+                                    <Typography component='span' variant='h4' sx={{ color: '#F0A500', fontWeight: 'bold' }}>₹ 1799</Typography>{' '}
                                     /year
                                 </Typography>
                             </Grid>
@@ -139,7 +143,7 @@ const Pricing = props => {
                                 <img src={device} alt='device' className={classes.marginRight} />
                                 <Typography component='span' sx={{ fontWeight: 'bolder' }}>Mobile + Desktop</Typography>
                             </Grid>
-                            <Grid item>
+                            <Grid item className={classes.padding}>
                                 <List>
                                     <ListItem sx={{ padding: '5px 0px' }}>
                                         <img src={doubleChecked} alt='checked' className={classes.marginRight} />
@@ -159,16 +163,16 @@ const Pricing = props => {
                     </Grid>
                     <Grid item container xs={4}>
                         <Grid item container className={classes.border} spacing={1} direction='column' alignItems='flex-start'>
-                            <Grid item>
+                            <Grid item className={classes.padding}>
                                 <img src={crown} alt='crown' />
                             </Grid>
-                            <Grid item>
+                            <Grid item className={classes.padding}>
                                 <Typography variant='body1' sx={{ fontWeight: 'bolder' }}>Diamond Plan</Typography>
                             </Grid>
-                            <Grid item sx={{ marginBottom: '10px' }}>
+                            <Grid item className={classes.padding} sx={{ marginBottom: '10px' }}>
                                 <Typography variant='body2'>
                                     <Typography component='span' sx={{ textDecoration: 'line-through', color: 'gray' }}>₹ 4599</Typography>{' '}
-                                    <Typography component='span' variant='h4' color='primary'>₹ 3599</Typography>{' '}
+                                    <Typography component='span' variant='h4' color='primary' sx={{ fontWeight: 'bold' }}>₹ 3599</Typography>{' '}
                                     /year
                                 </Typography>
                             </Grid>
@@ -186,7 +190,7 @@ const Pricing = props => {
                                 <img src={device} alt='device' className={classes.marginRight} />
                                 <Typography component='span' sx={{ fontWeight: 'bolder' }}>Mobile + Desktop</Typography>
                             </Grid>
-                            <Grid item>
+                            <Grid item className={classes.padding}>
                                 <List>
                                     <ListItem sx={{ padding: '5px 0px' }}>
                                         <img src={doubleChecked} alt='checked' className={classes.marginRight} />
