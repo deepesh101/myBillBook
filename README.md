@@ -1,3 +1,7 @@
+# myBillBook
+
+Assignment for Frontend Development Internship at Flobiz
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
